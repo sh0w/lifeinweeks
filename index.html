@@ -1,0 +1,84 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>your life in weeks</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <meta name="description" content="i try to remind myself of my own mortality often and decided to create this visualization. your remaining life expectancy is calculated based on your age, sex, and country of residence. a project by sarah howorka" />
+    <meta name="keywords" content="data visualization, data viz, mortality, population.io, life expectancy, ephemerality, ephemeral, life, death, media art, digital art, digitale kunst, sarah howorka, howorka" />
+    <meta name="author" content="Sarah Howorka" />
+    <meta name="robots" content="index, follow" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+        <h1>Your Life in Weeks</h1>
+        
+        <div id="formContainer">
+            <form id="form" class="clearfix">
+            <div id="formBirthdate" class="clearfix">
+                <select name="month" class="month">
+                    <option disabled selected>Month</option>
+                    <option value="01">January</option>
+                    <option value="02">February</option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                <input type="text" name="day" placeholder="Day" size="4">
+                <input type="text" name="year" placeholder="Year" size="8">
+            </div>
+            <div id="fromCountry" class="clearfix">
+                <select name="country" id="countries">
+                    <option disabled selected>Country</option>
+                </select>
+            </div>
+            
+            <div id="fromSex" class="clearfix">
+                <input type="radio" name="sex" id="female" value="female"> <label for="female">female</label>
+                <input type="radio" name="sex" id="male" value="male"> <label for="male">male</label>
+            </div>
+            <input id="submitForm" type="submit" class="sub clearfix" value="Calculate Life Expectancy">
+            </form>
+            <div id="errorMsg" class="clearfix"></div>
+        </div>
+    </header>
+    
+    <div id="result">
+        <span class="lived" style="display: none;"></span>
+        <span class="remaining" style="display: none;"></span>
+    </div>
+    <div id="life" class="clearfix">
+        
+    </div>
+    
+        <a href="#" id="openAbout">about</a>
+        <div id="about">
+            <h2>about lifeinweeks.org</h2>
+            <p>sometimes it's good to remind yourself of your own mortality.</p>
+            
+            <p>your remaining life expectancy is calculated using the <a href="http://api.population.io/">population.io API</a>.</p>
+            <p>
+        
+            <p>a project by <a href="http://www.sarahhoworka.com">sarah howorka</a>. feel free to <a href="http://www.github.com/sh0w/lifeinweeks">explore the code</a>, contribute, remix, etc.!</p>
+            <p> based on a wonderful <a href="http://waitbutwhy.com/2014/05/life-weeks.html">article</a> by tim urban from <a href="http://waitbutwhy.com/">waitbutwhy</a>.</p>
+            <a id="closeAbout" href="#">close</a>
+        </div>
+
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

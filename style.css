@@ -1,0 +1,126 @@
+body, input, select {
+    font-family: 'Source Code Pro', Consolas, monospace;
+    font-weight: 200;
+}
+window, html, body {
+    
+    height: 100%;
+}
+
+header {    
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+a {
+    color: #333;
+}
+
+#about {
+    max-width: 600px;
+    margin: 0px auto;
+    background: white;
+    position: fixed;
+    padding: 25px;
+    bottom: 25px;
+    left: 25px;
+}
+
+#openAbout {
+    
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+}
+
+#life {
+    margin: 0px auto 90px;
+    /*width: 1200px;*/
+    margin:
+}
+
+.year {
+    /*margin: 0px;*/
+}
+
+.week {
+    margin: 2px;
+    border: 1px solid black;
+    width: 11px;
+    height: 11px;
+    float: left;
+}
+.past.week {
+    background-color: black;
+}
+
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+@media print {
+   .past.week {
+        -webkit-print-color-adjust: exact;
+       background-color: black !important;
+   }   
+}
+
+#form {
+    margin: 150px auto 0px;
+    width: 600px;
+    
+}
+#form > div, #form input, #form label {
+    flaot: left;
+}
+
+#form input[type="text"], #form input[type="submit"], #form select {
+    border: 1px solid #ccc;
+    outline: none;
+    height: 1.5em;
+    padding: 5px;
+    margin: 0px;
+    background: white;
+    float: left;
+    margin: 10px 5px;
+    font-size: 2em;
+    border-radius: 0px;
+}
+#form input[type="radio"] {
+    padding: 5px 0px 10px;
+}
+#form input[type="submit"], #form select {
+    width: 600px;
+    border-color: #aaa;
+}
+
+#form select[name="month"] { width: 300px; }
+#form input[name="day"] { width: 110px; }
+#form input[name="year"] { width: 160px; }
+#form label {
+    font-size: 2em;
+    }
+
+
+.sub {
+    display: block;
+}
+
+#errorMsg {
+    background: #fcc;
+}
+
+#result {
+    font-size: 1.5em;
+    margin: 50px;
+    min-height: 64px;
+}
