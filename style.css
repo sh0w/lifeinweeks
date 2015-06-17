@@ -20,23 +20,6 @@ a {
     color: #333;
 }
 
-#about {
-    max-width: 600px;
-    margin: 0px auto;
-    background: white;
-    position: fixed;
-    padding: 25px;
-    bottom: 25px;
-    left: 25px;
-}
-
-#openAbout {
-    
-    position: fixed;
-    bottom: 50px;
-    left: 50px;
-}
-
 #life {
     margin: 0px auto 90px;
     /*width: 1200px;*/
@@ -123,4 +106,31 @@ a {
     font-size: 1.5em;
     margin: 50px;
     min-height: 64px;
+}
+
+
+#about {
+    max-width: 600px;
+    margin: 0px auto;
+    background: white;
+    position: fixed;
+    padding: 25px;
+    bottom: 25px;
+    left: 25px;
+}
+
+#openAbout {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+}
+
+@media (max-device-width: 800px), (max-width: 800px) {
+    #about {
+        width: 100%;
+        font-size: 1.5em;
+    }
+    #openAbout {
+        font-size: 1.5em;
+    }
 }
