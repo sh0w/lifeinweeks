@@ -89,10 +89,11 @@ var getCountries = function() {
 }
 
 var drawWeeksLived = function(weeks) {
+    var w = '';
     for (i = 0; i < weeks; i++) {
-        var w = $('<div class="week past" style="display: none;"></div>');
-        life.append(w);
+        var w = w + '<div class="week past" style="display: none;"></div>';
     }
+    life.append(w);
     life.find(".week.past").each(function(index) {
         setTimeout(function(param1) {
             $(param1).show();
@@ -101,10 +102,11 @@ var drawWeeksLived = function(weeks) {
 }
 
 var drawWeeksRemaining = function(weeks) {
+    var w = '';
     for (i = 0; i < weeks; i++) {
-        var w = $('<div class="week remaining" style="display: none;"></div>');
-        life.append(w);
+        var w = w + '<div class="week remaining" style="display: none;"></div>';
     }
+    life.append(w);
     life.find(".week.remaining").each(function(index) {
         setTimeout(function(param1) {
             param1.show();
